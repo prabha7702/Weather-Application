@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="title">Current Weather Details</div>
+    <div class="searchbar">
+        <p id="city-required" class="warning">Please fill the city name</p>
+        <p id="not-found" class="warning">No data found..</p>
+        <form id="city-name">
+            <input type="text" name="city" id="city" placeholder="Enter city name..."/>
+            <button id="submit">Search</button>
+        </form>
+    </div>
+    <div id="weather-data"></div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
