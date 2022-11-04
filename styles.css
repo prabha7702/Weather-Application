@@ -60,7 +60,7 @@ h1,h2,p{
     visibility: hidden;
 }
 @media screen and (max-width:768px){
-    #weather-data,.warning{
+    #weather-data,#warning{
         width: 70%;
     }
 }
