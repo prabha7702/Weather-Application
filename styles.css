@@ -52,12 +52,12 @@ h1,h2,p{
 #weather-data p{
     font-size: 20px;
 }
-.warning{
+#warning{
     width: 20%;
     margin: 10px auto;
     color: red;
     font-weight: bold;
-    display: none;
+    visibility: hidden;
 }
 @media screen and (max-width:768px){
     #weather-data,.warning{
