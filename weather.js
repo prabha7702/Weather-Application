@@ -1,12 +1,12 @@
 $(document).ready(()=>{
     $('#city').keyup(()=>{
-        $('.warning').hide();
+        $('#warning').css('visibility','hidden');
         $('#weather-data').hide();
     });
     $('#city-name').submit(()=>{
         let city=$('#city').val();
         if(city==""){
-            $('#city-required').show();
+            $('#warning').text('Please fill the city name').css('visibility','visible');
         }
         else{
             $.ajax({
@@ -25,7 +25,7 @@ $(document).ready(()=>{
                     $('#weather-data').show();
                 },
                 error : ()=>{
-                    $('#not-found').show();
+                    $('#warning').text('No data found').css('visibility','visible');
                 }
             });
         }
